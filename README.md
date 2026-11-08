@@ -1,22 +1,5 @@
 # NYC Development and School-Bus Disruption
 
-GIU · Data Engineering and Visualization · Winter 2026 · Milestone 1
-
-This project asks whether changes in development activity coincide with
-reported school-bus disruption across New York City's five boroughs.
-We study January 2022 to December 2024, clean each source separately,
-and combine monthly summaries. This is descriptive analysis, not a causal model.
-
-## Start here
-
-Open `NYC_Team5_Colab.ipynb` in Google Colab. Save a copy to Drive and run
-cells in order. It creates the project files automatically. It downloads raw
-records if a verified cache is not already present. A CPU runtime is enough.
-
-The delivered ZIP includes the raw snapshot and prepared data used for testing.
-The notebook includes an optional ZIP-import cell if you want to reproduce that
-snapshot without downloading from NYC again. Refreshing can change counts.
-
 The full click-by-click instructions are in `START_HERE.md`.
 Eyad's two charts and basic checks are explained in `EYAD_QUICK_GUIDE.md`.
 No local Python installation, credit card or Render subscription is needed
@@ -26,11 +9,11 @@ for the documented Colab + GitHub + PythonAnywhere workflow.
 
 | Name | Student ID | Questions | Assigned work |
 |---|---|---|---|
-| Eyad Elsafty | 16003613 | Q1–Q2 | Missing-value and borough checks; header, labels and source links |
-| Jana Hazem | 14003384 | Q3–Q4 | Housing dates, identifiers and duplicate rules; borough/year filters |
-| Omar Hisham | 16008286 | Q5–Q6 | Bus versions, delay parsing and outliers; category filters |
+| Eyad Elsafty | 16003613 | Q1–Q2 | missing value and borough checks; header, labels and source links |
+| Jana Hazem | 14003384 | Q3–Q4 | housing dates, identifiers and duplicate rules; borough/year filters |
+| Omar Hisham | 16008286 | Q5–Q6 | bus versions, delay parsing and outliers; category filters |
 | Anas Mohamed | 13005403 | Q7–Q8 | Aggregation and post-join checks; Generate Report callback |
-| Yassin Ahmed | 16002450 | Q9–Q10 | Student-count checks and validation; search, Story and deployment |
+| Yassin Ahmed | 16002450 | Q9–Q10 | student count checks and validation; search, Story and deployment |
 
 See `TEAM.md` for the work log. Names are filled in; members still need to
 record actual review, tests and changes before submission.
