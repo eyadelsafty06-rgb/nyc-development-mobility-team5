@@ -1,13 +1,4 @@
-# Start here — five-member project
 
-This is the rebuilt version for Eyad, Jana, Omar, Anas and Yassin. It has ten
-research questions, ten research charts, complete documentation and a Colab
-notebook that creates its own source files.
-
-The code and local verification are finished. Your remaining work is to run
-and review it in your Google account, record actual team contributions, upload
-the final version to GitHub, deploy it, test the live website, and submit.
-The generated work has not been deployed or emailed on your behalf.
 
 ## A. Run the notebook in Google Colab
 
