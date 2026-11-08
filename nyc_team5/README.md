@@ -1,13 +1,8 @@
 # NYC Development and School-Bus Disruption
 
-GIU · Data Engineering and Visualization · Winter 2026 · Milestone 1
 
-This project asks whether changes in development activity coincide with
-reported school-bus disruption across New York City's five boroughs.
-We study January 2022 to December 2024, clean each source separately,
-and combine monthly summaries. This is descriptive analysis, not a causal model.
 
-## Start here
+
 
 Open `NYC_Team5_Colab.ipynb` in Google Colab. Save a copy to Drive and run
 cells in order. It creates the project files automatically. It downloads raw
@@ -18,9 +13,6 @@ The notebook includes an optional ZIP-import cell if you want to reproduce that
 snapshot without downloading from NYC again. Refreshing can change counts.
 
 The full click-by-click instructions are in `START_HERE.md`.
-Eyad's two charts and basic checks are explained in `EYAD_QUICK_GUIDE.md`.
-No local Python installation, credit card or Render subscription is needed
-for the documented Colab + GitHub + PythonAnywhere workflow.
 
 ## Team
 
