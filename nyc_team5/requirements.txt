@@ -1,6 +1,0 @@
-# Website only: a smaller installation for PythonAnywhere.
-dash==3.2.0
-plotly==6.3.0
-pandas>=2.2,<3
-numpy>=2.0,<3
-requests>=2.32,<3
