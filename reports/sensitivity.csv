@@ -1,0 +1,7 @@
+check,value
+Permit-work-type records,461437.0
+Unique permit / borough-month,388430.0
+Mean parsed delay (<=240 minutes),39.53204436371932
+Mean parsed delay (<=120 minutes),39.53204436371932
+Median cost including IQR flags,25000.0
+Median cost excluding IQR flags,15250.0
