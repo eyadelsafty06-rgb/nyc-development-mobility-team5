@@ -1,0 +1,15 @@
+,housing,transport
+input_rows,461601.0,262875.0
+exact_duplicates_removed,87.0,0.0
+invalid_geography_or_date_removed,0.0,21013.0
+missing_identifier_removed,60.0,0.0
+placeholder_identifiers_removed,1.0,
+conflicting_key_rows_excluded,16.0,
+approval_after_issue_flagged,11.0,
+negative_costs_nulled,0.0,
+cost_outliers_flagged_retained,66909.0,
+output_rows,461437.0,241862.0
+latest_version_conflicts_excluded,,0.0
+older_versions_removed,,0.0
+students_missing_or_invalid,,95.0
+delay_missing_or_unparsed,,13928.0
