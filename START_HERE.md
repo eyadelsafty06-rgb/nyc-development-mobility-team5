@@ -85,8 +85,3 @@ Omar Hisham — 16008286 — Q5–Q6
 Anas Mohamed — 13005403 — Q7–Q8
 Yassin Ahmed — 16002450 — Q9–Q10
 
-Each member should review and understand their charts, cleaning tasks and website work. Keep the contribution and AI-assistance records accurate.
-
-Your supplied instructions list 9 November 2026 as the deadline. Send one team email to ICS503Data@gmail.com with all five names and IDs, your GitHub link, the live website link and both dataset links from README.md. Keep a copy of the email, notebook and export ZIP.
-
-The Colab preview stops when its session ends. Use the tested PythonAnywhere link for submission.
