@@ -159,60 +159,6 @@ reports and cannot be counted as unique children affected.
 DOB and school-transport planners could investigate highlighted borough-months,
 then obtain route-level and school-calendar evidence before changing services.
 
-## Run locally (optional)
-
-With Python 3.12 installed, open a terminal in the project folder:
-
-```bash
-python -m pip install -r requirements-analysis.txt
-python app.py
-```
-
-Open http://127.0.0.1:8050 . The prepared data is included.
-Rebuild from a verified cache: `python pipeline.py`.
-Download fresh official records: `python pipeline.py --refresh`.
-Run checks: `python -m pytest -q`.
-
-## PythonAnywhere deployment (free Beginner account)
-
-The chosen deployment path is PythonAnywhere, not Render. Keep source code on
-GitHub. The PDF names hosting examples rather than requiring a specific provider.
-Use the existing `eyadelsafty` account. Its expected website address is
-https://eyadelsafty.pythonanywhere.com — this is a target, not a verified live URL.
-
-In a Bash console, after uploading this version to the suggested new GitHub repo:
-
-```bash
-cd ~
-git clone --depth 1 https://github.com/eyadelsafty06-rgb/nyc-development-mobility-team5.git nyc_team5
-cd ~/nyc_team5
-python3.12 -m venv --system-site-packages ~/nyc-team5-env
-source ~/nyc-team5-env/bin/activate
-python -m pip install --no-cache-dir -r requirements.txt
-python -c "from app import LOAD_ERROR; assert not LOAD_ERROR, LOAD_ERROR; print('Dashboard ready')"
-```
-
-If the clone destination already exists, inspect it rather than deleting it.
-The `requirements.txt` file installs only website dependencies. Full EDA runs
-in Colab, avoiding an unnecessary analysis installation on the free host.
-
-In Web → Add a new web app choose Manual configuration → Python 3.12.
-If the free account already has a website, configure that existing app instead.
-Set source/working directory to `/home/eyadelsafty/nyc_team5` and virtualenv to
-`/home/eyadelsafty/nyc-team5-env`.
-Copy the complete contents of `pythonanywhere_wsgi.py` into the WSGI editor.
-Save, reload and test the website. Do not run `app.run()` or Gunicorn there.
-
-The free plan currently lists one web app, 512 MiB storage and one-month expiry.
-Check the Web tab for the renewal/extension control and keep it active through
-grading. Do not upgrade or enter card details for this workflow.
-
-Official setup references (checked 5 November 2026):
-- https://www.pythonanywhere.com/registration/register/beginner/
-- https://help.pythonanywhere.com/pages/FreeAccountsFeatures/
-- https://help.pythonanywhere.com/pages/Flask/
-- https://help.pythonanywhere.com/pages/DashWSGIConfig
-- https://dash.plotly.com/dash-in-jupyter
 
 ## Files
 
@@ -228,23 +174,4 @@ Official setup references (checked 5 November 2026):
 
 ## Submission status
 
-- Suggested new repository: `nyc-development-mobility-team5` (create it first).
-- Actual final GitHub URL: pending team upload.
-- Verified live website URL: pending deployment and live tests.
-- Hosted test date: pending.
-- Member work log: pending member review.
 
-Local tests are documented in `reports/VALIDATION.md`. They do not establish
-that the hosted website works. Replace pending entries with actual results.
-
-The supplied PDF gives a deadline of **9 November 2026**. It instructs one team
-email to **ICS503Data@gmail.com** containing all five student IDs, the GitHub
-URL, the deployed website URL and both dataset links. Include all project files
-in GitHub before that deadline; later changes are not considered.
-
-## AI assistance
-
-ChatGPT helped prepare the code, notebook, documentation and setup guidance.
-`PROMPTS.md` records the initial request and relevant follow-up prompts.
-Each member must understand and verify their assigned work. The assignment
-requires the prompts to be recorded; the log does not claim independent authorship.
