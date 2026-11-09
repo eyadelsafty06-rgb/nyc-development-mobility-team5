@@ -1,22 +1,38 @@
 # NYC Development and School-Bus Disruption
+This project compares NYC building permit activity with reported school-bus breakdowns and delays from 2022 to 2024. We join monthly summaries by borough and use an interactive dashboard to explore the results.
 
-The full click-by-click instructions are in `START_HERE.md`.
-Eyad's two charts and basic checks are explained in `EYAD_QUICK_GUIDE.md`.
-No local Python installation, credit card or Render subscription is needed
-for the documented Colab + GitHub + PythonAnywhere workflow.
+- [Live dashboard](https://janahazem.pythonanywhere.com)
+- [Analysis notebook](NYC_Team5_Colab_%281%29%20%282%29.ipynb)
+- [Full setup guide](START_HERE.md)
+
+## Setup
+
+1. Download this repository as a ZIP and open the analysis notebook in Google Colab.
+2. Run the setup and project-file cells, then upload the ZIP in the **Import the data snapshot** cell.
+3. Keep `REFRESH = False` to use the supplied raw data. Run the remaining cells in order.
+
+To run the dashboard locally, use Python 3.12, install the packages with `python -m pip install -r requirements.txt`, and run `python app.py`. Open http://localhost:8050.
+
+## Deployment
+
+1. Clone the repository into `~/nyc_team5` on PythonAnywhere. Create a Python 3.12 virtual environment and install `requirements.txt`.
+2. Create a web app using **Manual configuration** and Python 3.12. Set its source and working directories to the cloned project and select the virtual environment.
+3. Use `pythonanywhere_wsgi.py` as the WSGI template and update its project path to match your account.
+4. Reload the web app. Open the hosted dashboard, select a borough and year, and click **Generate Report**.
+
+See [START_HERE.md](START_HERE.md) for the full walkthrough.
 
 ## Team
 
 | Name | Student ID | Questions | Assigned work |
 |---|---|---|---|
 | Eyad Elsafty | 16003613 | Q1–Q2 | missing value and borough checks; header, labels and source links |
-| Jana Hazem | 14003384 | Q3–Q4 | housing dates, identifiers and duplicate rules; borough/year filters |
+| Jana Hazem | 14003384 | Q3–Q4 | housing dates, identifiers and duplicate rules; borough/year filters and deployment|
 | Omar Hisham | 16008286 | Q5–Q6 | bus versions, delay parsing and outliers; category filters |
 | Anas Mohamed | 13005403 | Q7–Q8 | Aggregation and post-join checks; Generate Report callback |
-| Yassin Ahmed | 16002450 | Q9–Q10 | student count checks and validation; search, Story and deployment |
+| Yassin Ahmed | 16002450 | Q9–Q10 | student count checks and validation; search, Story |
 
-See `TEAM.md` for the work log. Names are filled in; members still need to
-record actual review, tests and changes before submission.
+Website deployed the dashboard on PythonAnywhere and reran the notebook in Colab, where all eight tests passed. See [TEAM.md](TEAM.md) for the detailed contribution log.
 
 ## Two datasets
 
@@ -162,7 +178,7 @@ then obtain route-level and school-calendar evidence before changing services.
 
 ## Files
 
-- `NYC_Team5_Colab.ipynb`: standalone notebook with embedded project source.
+-  [Analysis notebook](NYC_Team5_Colab_%281%29%20%282%29.ipynb) — standalone notebook with embedded project source.
 - `pipeline.py`, `eda.py`, `charts.py`, `team.py`: data and chart functions.
 - `app.py`, `assets/style.css`: dashboard.
 - `data/raw`: compressed source extracts, schemas and timestamped manifests.
@@ -172,6 +188,8 @@ then obtain route-level and school-calendar evidence before changing services.
 - `START_HERE.md`: complete beginner instructions.
 - `pythonanywhere_wsgi.py`: ready-to-copy hosting configuration.
 
-## Submission status
+## AI assistance
+
+ChatGPT assisted with the code, notebook, and documentation. See [PROMPTS.md](PROMPTS.md) for the prompt log.
 
 
